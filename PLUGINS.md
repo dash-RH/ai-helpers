@@ -231,6 +231,7 @@ React component development — coding standards, testing, and structure
 <tr><td nowrap><code>pf-rhds-layout-gen</code></td><td>Generate layout code for embedding RHDS header and footer web components inside a PatternFly Page.</td><td>stable</td></tr>
 <tr><td nowrap><code>pf-rhds-theme-audit</code></td><td>Audit and fix theme synchronization between PatternFly React and Red Hat Design System web components, then generate a usage guide.</td><td>stable</td></tr>
 <tr><td nowrap><code>pf-table-gen</code></td><td>Generate PatternFly table components with sorting, filtering, pagination, and expandable rows.</td><td>stable</td></tr>
+<tr><td nowrap><code>pf-test-from-spec-gen</code></td><td>Generate requirement-traced React Testing Library tests from a component spec or acceptance criteria.</td><td>stable</td></tr>
 <tr><td nowrap><code>pf-test-gen</code></td><td>Generate a unit test file for a React component using Testing Library.</td><td>stable</td></tr>
 </table>
 
@@ -279,7 +280,7 @@ PatternFly team tools and skill incubation — issue triage, release management,
 
 **Eval coverage**
 
-- Consumer: 49/49 (100%)
+- Consumer: 50/50 (100%)
 - Workshop: 0/22 (0%)
 
 ---
@@ -342,6 +343,7 @@ Generated from skill frontmatter and section headings. Token cost is a relative 
 | `pf-rhds-layout-gen` | PatternFly designers and developers | The user provides one of: A request for an RHDS <rh-navigation-primary> header or <rh-footer>... | Output a single, runnable component file. Include all necessary imports (PF React components ... | M |
 | `pf-rhds-theme-audit` | PatternFly designers and developers | Task context | 1. Audit summary — report what was found (theme toggle method, redundant mappings, missing pr... | M |
 | `pf-table-gen` | PatternFly designers and developers | The user provides one of: A description of the data and desired table features (e.g., "sortab... | Output the complete table component ready to save. Include the import block, type definitions... | S |
+| `pf-test-from-spec-gen` | PatternFly designers and developers | The user provides one of: A requirements document, PRD section, or acceptance criteria (paste... | Output a complete test file with: 1. Traceability comment mapping tests to requirements 2. Or... | M |
 | `pf-test-gen` | PatternFly designers and developers | The user will provide a component file path or component code. Read the component source befo... | Output the complete test file ready to save. Name it ComponentName.test.tsx matching the sour... | S |
 | `pf-analytics-repo-pruning` | Contributors and maintainers | File: repos.json (project root or path the user supplies). Expect a top-level repos array; ea... | Structured result | S |
 | `pf-bug-triage` | Contributors and maintainers | The user provides an issue (title, body, labels, and optionally linked files or component nam... | Produce a triage comment or summary using this template: markdown | S |

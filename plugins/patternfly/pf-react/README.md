@@ -22,6 +22,7 @@ React component development — coding standards, testing, and structure.
 - **PF Rhds Layout Gen** (`/pf-react:pf-rhds-layout-gen`) — Generate layout code for embedding RHDS header and footer web components inside a PatternFly Page.
 - **PF Rhds Theme Audit** (`/pf-react:pf-rhds-theme-audit`) — Audit and fix theme synchronization between PatternFly React and Red Hat Design System web components, then generate a usage guide.
 - **PF Table Gen** (`/pf-react:pf-table-gen`) — Generate PatternFly table components with sorting, filtering, pagination, and expandable rows.
+- **PF Test From Spec Gen** (`/pf-react:pf-test-from-spec-gen`) — Generate requirement-traced React Testing Library tests from a component spec or acceptance criteria.
 - **PF Test Gen** (`/pf-react:pf-test-gen`) — Generate a unit test file for a React component using Testing Library.
 
 ### Agents
