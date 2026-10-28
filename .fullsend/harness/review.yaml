@@ -1,5 +1,5 @@
 # Thin ai-helpers overlay over the pinned upstream review harness.
-base: https://raw.githubusercontent.com/fullsend-ai/agents/d8a9bc78b9566158a03efda6265d904c7dfc1981/harness/review.yaml#sha256=58414921e8dd6b7a7135a7d23dde70e4a51fe4cbbc2b4bacd74de2eeb62acd99
+base: https://raw.githubusercontent.com/fullsend-ai/agents/16657d540187b16743c8693dc2ccc40366334430/harness/review.yaml#sha256=10a0d8a3c4f77ab89c4bd3cef5cead82d0680cc1f56965656a3c101aaf589a85
 
 description: "Fullsend review with ai-helpers-specific augmentation"
 
