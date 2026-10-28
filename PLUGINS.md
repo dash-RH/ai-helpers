@@ -221,6 +221,7 @@ React component development — coding standards, testing, and structure
 <tr><td nowrap><code>pf-chatbot-bundle-audit</code></td><td>Audit PatternFly ChatBot imports for tree-shaking opportunities.</td><td>stable</td></tr>
 <tr><td nowrap><code>pf-component-check</code></td><td>Audit PatternFly React component nesting, wrapper hierarchies, and layout structure.</td><td>stable</td></tr>
 <tr><td nowrap><code>pf-component-reuse-check</code></td><td>Detects custom React components in newly created or modified (uncommitted) code that overlap with PatternFly React components, suggests the PatternFly equivalent, and can replace the custom component then build to verify.</td><td>stable</td></tr>
+<tr><td nowrap><code>pf-context-gen</code></td><td>Generate AI-friendly context files for PatternFly components.</td><td>stable</td></tr>
 <tr><td nowrap><code>pf-deploy</code></td><td>Deploy a PatternFly React project to GitHub Pages using pfcli deploy.</td><td>stable</td></tr>
 <tr><td nowrap><code>pf-design-comments-setup</code></td><td>Integrate @patternfly/design-comments into React apps for on-page design feedback, pinned comment threads, GitHub Issues sync, and Jira linking.</td><td>stable</td></tr>
 <tr><td nowrap><code>pf-form-gen</code></td><td>Generate PatternFly form components with validation, layout, and accessibility.</td><td>stable</td></tr>
@@ -278,7 +279,7 @@ PatternFly team tools and skill incubation — issue triage, release management,
 
 **Eval coverage**
 
-- Consumer: 48/48 (100%)
+- Consumer: 49/49 (100%)
 - Workshop: 0/22 (0%)
 
 ---
@@ -331,6 +332,7 @@ Generated from skill frontmatter and section headings. Token cost is a relative 
 | `pf-chatbot-bundle-audit` | PatternFly designers and developers | Task context | Structured result | M |
 | `pf-component-check` | PatternFly designers and developers | Task context | Structured result | L |
 | `pf-component-reuse-check` | PatternFly designers and developers | Task context | Structured result | M |
+| `pf-context-gen` | PatternFly designers and developers | The user provides one of: A component name or list of components (e.g., "Table", "Form + Form... | Output a single markdown context file with this structure: markdown PatternFly Context: [Comp... | M |
 | `pf-deploy` | PatternFly designers and developers | Task context | Structured result | S |
 | `pf-design-comments-setup` | PatternFly designers and developers | Task context | Structured result | S |
 | `pf-form-gen` | PatternFly designers and developers | The user provides one of: A description of the form's purpose and fields (e.g., "create a use... | Output the complete form component ready to save. Include the import block, component functio... | S |

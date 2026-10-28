@@ -12,6 +12,7 @@ React component development — coding standards, testing, and structure.
 - **PF Chatbot Bundle Audit** (`/pf-react:pf-chatbot-bundle-audit`) — Audit PatternFly ChatBot imports for tree-shaking opportunities.
 - **PF Component Check** (`/pf-react:pf-component-check`) — Audit PatternFly React component nesting, wrapper hierarchies, and layout structure.
 - **PF Component Reuse Check** (`/pf-react:pf-component-reuse-check`) — Detects custom React components in newly created or modified (uncommitted) code that overlap with PatternFly React components, suggests the PatternFly equivalent, and can replace the custom component then build to verify.
+- **PF Context Gen** (`/pf-react:pf-context-gen`) — Generate AI-friendly context files for PatternFly components.
 - **PF Deploy** (`/pf-react:pf-deploy`) — Deploy a PatternFly React project to GitHub Pages using pfcli deploy.
 - **PF Design Comments Setup** (`/pf-react:pf-design-comments-setup`) — Integrate @patternfly/design-comments into React apps for on-page design feedback, pinned comment threads, GitHub Issues sync, and Jira linking.
 - **PF Form Gen** (`/pf-react:pf-form-gen`) — Generate PatternFly form components with validation, layout, and accessibility.
