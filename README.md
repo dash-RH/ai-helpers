@@ -11,7 +11,9 @@ AI skills for PatternFly and UXD teams — component development, design, access
 
 Official setup docs: [Claude Code plugins](https://code.claude.com/docs/en/plugins), [Cursor plugins](https://cursor.com/docs/plugins), [OpenAI plugins and local marketplaces](https://developers.openai.com/plugins/build/plugins), and [Codex CLI](https://developers.openai.com/codex/cli/).
 
-> **Codex marketplace support:** Codex also supports a native repo marketplace at `.agents/plugins/marketplace.json`. This repository uses the existing `.claude-plugin/marketplace.json` because Codex can read it independently, so a second catalog would duplicate maintenance. A Codex-specific marketplace can be added if Codex-only metadata or policies become necessary.
+> **Marketplace catalogs:** Claude Code and Codex both read `.claude-plugin/marketplace.json`. Cursor reads `.cursor-plugin/marketplace.json` separately. Codex does not require Claude Code to be installed.
+>
+> **Why two catalogs?** Cursor uses a separate plugin format and ecosystem, so we maintain `.cursor-plugin/marketplace.json` independently. Claude Code and Codex share `.claude-plugin/` because Codex reads the Claude Code format natively — no duplication needed.
 
 <p align="center">
   <img src="assets/install-plugins-terminal.gif" alt="Browsing and installing plugins interactively in Claude Code" width="600">

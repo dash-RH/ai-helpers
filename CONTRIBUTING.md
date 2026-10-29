@@ -2,12 +2,11 @@
 
 We welcome contributions of new skills, agents, plugins, and documentation.
 
-Plugins have native marketplace manifests for **Claude Code** and **Cursor**.
+Plugins have marketplace manifests:
+- **Claude Code and Codex**: both read `.claude-plugin/marketplace.json`
+- **Cursor**: reads `.cursor-plugin/marketplace.json`
 
-- **Codex**
-  - The desktop app and CLI can independently read the existing Claude marketplace format. Claude Code does not need to be installed.
-  - Codex also supports a native repo marketplace at `.agents/plugins/marketplace.json`.
-  - This repository does not duplicate its catalog unless Codex-specific metadata or policies require it.
+Codex does not require Claude Code to be installed — it reads the marketplace independently.
 
 Individual plugins should remain portable and tool-agnostic.
 
@@ -108,7 +107,7 @@ plugins/<plugin-name>/
 └── agents/
 ```
 
-2. Write identical `plugin.json` files for both `.claude-plugin/` and `.cursor-plugin/`:
+2. Create `plugin.json` manifests in both `.claude-plugin/` and `.cursor-plugin/`. They can differ based on Cursor-specific metadata, but typically keep them identical for consistency. (See README for why we maintain two catalogs separately.)
 
 ```json
 {
